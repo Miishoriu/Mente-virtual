@@ -1,20 +1,32 @@
 /* Estilo do nav */
 nav .nav-titulo{
-    color: #774700;
+    color: #710026;
 }
 
 /* Estilo botão login e cadastre-se */
 .altera-botao {
     /* Estilo do botão */
     border: 0;
-    background-color: aquamarine;
+    background-color: #710026;
 }
 
 .altera-botao:hover{
     /* Quando mouse estiver em cima vai fazer algo */
-    background-color: rebeccapurple;
+    background-color: #CE4257;
 }
 
 .container {
     margin-top: 20px;
+}
+
+.arruma-imagens img{
+    width: 150px;
+    height: 150px;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
 }
