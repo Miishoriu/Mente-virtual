@@ -15,11 +15,6 @@ nav .nav-titulo{
     background-color: rebeccapurple;
 }
 
-div .altera-imagens{
-    width: 300px !important;
-    height: 300px;
-   
-}
-div .textinho{
-    text-wrap: wrap;
+.container {
+    margin-top: 20px;
 }
