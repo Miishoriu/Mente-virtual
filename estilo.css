@@ -30,3 +30,17 @@ nav .nav-titulo{
     align-items: center;
 
 }
+
+.tamanho {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    float: center;
+    align-items: center;
+    width: 700px;
+    height: 600px;
+}
+
+.carousel-inner img {
+    margin: auto;
+    }
