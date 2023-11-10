@@ -19,24 +19,10 @@ nav .nav-titulo{
     margin-top: 20px;
 }
 
-.arruma-imagens img{
-    width: 150px;
-    height: 150px;
+.altera-carrossel {
+ 
 }
 
-.card {
-    width: 100%;
-    display: flex;
-    align-items: center;
-
-}
-
-.tamanho {
-    display: flex;
-    align-items: center;
-    width: 700px;
-    height: 600px;
-}
 .centraliza-grid{
     display: grid;
     place-items: center;
