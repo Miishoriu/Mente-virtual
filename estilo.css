@@ -1,0 +1,25 @@
+/* Estilo do nav */
+nav .nav-titulo{
+    color: #774700;
+}
+
+/* Estilo botão login e cadastre-se */
+.altera-botao {
+    /* Estilo do botão */
+    border: 0;
+    background-color: aquamarine;
+}
+
+.altera-botao:hover{
+    /* Quando mouse estiver em cima vai fazer algo */
+    background-color: rebeccapurple;
+}
+
+div .altera-imagens{
+    width: 300px !important;
+    height: 300px;
+   
+}
+div .textinho{
+    text-wrap: wrap;
+}
