@@ -33,14 +33,11 @@ nav .nav-titulo{
 
 .tamanho {
     display: flex;
-    text-align: center;
-    justify-content: center;
-    float: center;
     align-items: center;
     width: 700px;
     height: 600px;
 }
-
-.carousel-inner img {
-    margin: auto;
-    }
+.centraliza-grid{
+    display: grid;
+    place-items: center;
+}
