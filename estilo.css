@@ -1,29 +1,108 @@
+html {
+    color: #FF7F51;
+}
+
 /* Estilo do nav */
-nav .nav-titulo{
-    color: #710026;
+div a img{
+    color: #fff;
+   display: flex;
+   margin-right: 0px;
+   margin-top: 55px;
+}
+
+
+.container-estilo{
+    background-color: #0B2545;
+    height: 120px;
+    font-family: 'Mukta', sans-serif;
 }
 
 /* Estilo botão login e cadastre-se */
 .altera-botao {
     /* Estilo do botão */
     border: 0;
-    background-color: #710026;
-}
-
-.altera-botao:hover{
-    /* Quando mouse estiver em cima vai fazer algo */
-    background-color: #CE4257;
+    background-color: #720026;
 }
 
 .container {
     margin-top: 20px;
-}
-
-.altera-carrossel {
- 
+  
 }
 
 .centraliza-grid{
     display: grid;
     place-items: center;
+}
+
+.Texto{
+    
+    margin-left: 100px;
+    margin-right: 100px;;
+}
+
+.titulo {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #1D3557;
+    margin: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.nav-titulo{
+    color: #ffff;
+    margin-bottom:60px;
+    margin-left:10px;
+}
+.nav-titulo:hover{
+    color: #A8DADC;
+    transition: 1s;
+}
+.nav-link{
+    padding:50px;
+    margin-bottom:5px;
+    color:#ffff !important;
+}
+.nav-link:hover{
+    color:#EED5FB !important;
+    transition: 1s;
+}
+.botao{
+    height: 38px;
+    margin-right: 155px;
+    color:black;
+    border-color: white;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+.botao:hover{
+    color: black;
+    border-color: #A8DADC;
+    display: block;
+    background-color: #A8DADC;
+    transition: 1s ;
+}
+.input-style {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+  }
+  
+  .input-style {
+    height: 38px;
+    border-radius: 10px;
+    border-color: #720026;
+    box-shadow: 0 0 0 0.2rem rgba(255, 153, 0, 0.25);
+  }
+  .input-style:focus {
+    height: 38px;
+    border-radius: 10px;
+    border-color: #FF7F51;
+    box-shadow: 0 0 0 0.2rem rgba(255, 153, 0, 0.25);
+  }
+  
+.altera-itens li a:hover{
+    cursor: pointer;
+    color: #CE4257;
 }
