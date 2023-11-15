@@ -8,7 +8,7 @@
     <title>Cursos Mente Virtual</title>
     <link rel="shortcut icon" href="imagens/LOGO_mente_digital/Logo_preto.png" />
     <!-- script -->
-    <script type="text/javascript" src="java.js"></script>
+    <script type="text/javascript" src="login.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="estilo.css">
     <!-- css bootstrap -->
@@ -79,24 +79,22 @@
         <div class="row g-3 ">
             <div class="col-md-6">
                 <form class="formulario"
-                style="margin-top: 60px; padding: 100px; border: 2px solid #457B9D; border-radius: 50px; background-color: #13315C; color: aliceblue;">
+                    style="margin-top: 60px; padding: 100px; border: 2px solid #457B9D; border-radius: 50px; background-color: #13315C; color: aliceblue;">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control is-invalid " id="floatingInputInvalid"
-                            placeholder="Digite seu e-mail: name@example.com">
-                        <div id="emailHelp" class="form-text">Todos os campos são obrigatórios.</div>
+                        <label for="loginUsuario" class="form-label">Usuário</label>
+                        <input type="text" class="form-control" id="loginUsuario" placeholder="Digite seu usuário"
+                            required>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Senha</label>
-                        <input type="senha" class="form-control is-invalid" id="floatingInputInvalid"
-                            placeholder="Digite sua senha">
-                        <div id="senhaHelp" class="form-text">Todos os campos são obrigatórios.</div>
+                        <label for="loginSenha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="loginSenha" placeholder="Digite sua senha"
+                            required>
                     </div>
                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Mandar e-mail de login.</label>
+                        <input type="checkbox" class="form-check-input" id="lembrarUsuario">
+                        <label class="form-check-label" for="lembrarUsuario">Lembrar usuário</label>
                     </div>
-                    <button type="submit" class="btn btn-outline-light">Logar</button>
+                    <button type="submit" class="btn btn-outline-light" onclick="realizarLogin()">Logar</button>
                 </form>
             </div>
         </div>

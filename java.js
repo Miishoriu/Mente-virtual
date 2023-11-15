@@ -1,36 +1,53 @@
-let nome = document.querySelector('#nome')
-let labelNome = document.querySelector('#labelNome')
+var usuarios = [];
 
-let sobrenome = document.querySelector('#sobrenome')
-let labelSobrenome = document.querySelector('#labelSobrenome')
-
-let usuario = document.querySelector('#usuario')
-let labelUsuario = document.querySelector('#labelUsuario')
-
-let email = document.querySelector('#email')
-let labelEmail = document.querySelector('#labelEmail')
-
-let senha = document.querySelector('#senha')
-let labelSenha = document.querySelector('#labelSenha')
-
-let endereco = document.querySelector('#endereco')
-let labelEndereco = document.querySelector('#labelEndereco')
-
-let genero = document.querySelector('#genero')
-let labelGenero = document.querySelector('#labelGenero')
-
-let telefone = document.querySelector('#telefone')
-let labelTelefone = document.querySelector('#labelTelefone')
-
-nome.addEventListener('keyup', () => {
-    if (nome.value.length <= 2) {
-        labelNome.setAttribute('style', 'color: red')
-    } else {
-        labelNome.setAttribute('style', 'color: green')
-        alert('Passou de 3');
-    }
-})
+var usuariosSalvos = localStorage.getItem('usuarios');
+if (usuariosSalvos) {
+    usuarios = JSON.parse(usuariosSalvos);
+}
 
 function cadastrar() {
-    
+    var nome = document.getElementById('validationCustom01').value;
+    var sobrenome = document.getElementById('validationCustom02').value;
+    var usuario = document.getElementById('validationCustom02').value;
+    var email = document.getElementById('floatingInputInvalid').value;
+    var senha = document.getElementById('floatingInputInvalid').value;
+    var endereco = document.getElementById('validationCustom03').value;
+    var genero = document.getElementById('validationCustom04').value;
+    var telefone = document.getElementById('validationCustom05').value;
+
+    // objeto usuário
+    var novoUsuario = {
+        nome: nome,
+        sobrenome: sobrenome,
+        usuario: usuario,
+        email: email,
+        senha: senha,
+        endereco: endereco,
+        genero: genero,
+        telefone: telefone
+    };
+
+    usuarios.push(novoUsuario);
+
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+    localStorage.setItem('loginInfo', JSON.stringify({
+        usuario: usuario,
+        senha: senha
+    }));
+
+    limparCampos();
+
+    alert('Cadastro realizado com sucesso!');
+}
+
+function limparCampos() {
+    document.getElementById('validationCustom01').value = '';
+    document.getElementById('validationCustom02').value = '';
+    document.getElementById('validationCustom02').value = '';
+    document.getElementById('floatingInputInvalid').value = '';
+    document.getElementById('floatingInputInvalid').value = '';
+    document.getElementById('validationCustom03').value = '';
+    document.getElementById('validationCustom04').value = '';
+    document.getElementById('validationCustom05').value = '';
 }
