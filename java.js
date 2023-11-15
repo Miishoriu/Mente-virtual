@@ -39,6 +39,8 @@ function cadastrar() {
     limparCampos();
 
     alert('Cadastro realizado com sucesso!');
+
+    window.location.href='login.html';
 }
 
 function limparCampos() {
