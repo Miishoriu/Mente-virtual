@@ -40,7 +40,6 @@ function cadastrar() {
 
     alert('Cadastro realizado com sucesso!');
 
-    window.location.href='./login.html';
 }
 
 function limparCampos() {
