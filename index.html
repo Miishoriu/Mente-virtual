@@ -21,16 +21,16 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body style="background-color: #EEF4ED;">
+<body style="background-color: #fcf9ff;">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap');
+    </style>
 
-      </style>
-      
     <!-- Inicio navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0" style="background-color:#720026;"> <!-- Define o espaço da nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0" style="background-color:#191725;">
+        <!-- Define o espaço da nav -->
         <div class="container-fluid container-estilo"> <!-- Conteúdo da nav -->
             <a class="navbar-brand nav-titulo" href="index.html">
                 <img src="./imagens/LOGO_mente_digital/Logo_branco.png" alt="Logo" width="150" height="150"
@@ -56,13 +56,13 @@
                             Cursos
                         </a>
                         <ul class="dropdown-menu altera-itens">
-                            <li><a class="dropdown-item" href="#">Ratatuile</a></li>
-                            <li><a class="dropdown-item" href="#">Desenhos</a></li>
-                            <li><a class="dropdown-item" href="#">Pintura</a></li>
+                            <li><a class="dropdown-item" href="curso_gastronomia.html">Gastronomia</a></li>
+                            <li><a class="dropdown-item" href="curso_desenho.html">Desenhos</a></li>
+                            <li><a class="dropdown-item" href="curso_pintura.html">Pintura</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="index.html">Todos</a></li>
+                            <li><a class="dropdown-item" href="index.html#carouselExampleAutoplaying">Todos</a></li>
                         </ul>
                     </li>
 
@@ -70,7 +70,7 @@
                 <form class="d-flex" role="search">
                     <input placeholder="O que você procura?" class="input-style" type="text">
 
-                        
+
                 </form>
                 <div class="m-2">
                     <button class="botao" type="submit">Pesquisar</button>
@@ -86,27 +86,38 @@
         </div>
     </nav>
     <!-- Fim navbar -->
+
     <!-- Inicio texto principal -->
-    <div class="row">
-        <div class="col">
-            <div class="corpo-texto">
-                <h1 class="titulo">Nossos cursos</h1>
-                <p class="Texto">Explore nosso catálogo diversificado de cursos na Mente Digital, projetados para
-                    transformar seus
-                    interesses em conquistas tangíveis. De artes criativas a habilidades práticas e tecnológicas de
-                    ponta, cada curso é uma oportunidade de aprendizado envolvente e significativo.Nossos instrutores
-                    especializados estão aqui para guiá-lo em cada passo, proporcionando uma experiência educacional que
-                    se adapta ao seu ritmo. Esteja você buscando aprimorar suas habilidades profissionais ou
-                    simplesmente explorar novas paixões, os cursos da Mente Digital oferecem um caminho para o sucesso
-                    em um mundo em constante mudança. Junte-se a nós enquanto transformamos o conhecimento em
-                    capacidade, capacitando você a alcançar seus objetivos e aspirações.</p>
+    <div class="col">
+        <div class="card"
+            style="margin-left: 50px; margin-right: 20px; margin-top: 150px; margin-bottom: 200px; border: 0; background-color: #fcf9ff;">
+            <div class="row">
+                <div class="col">
+                    <img src="./imagens/Estudante.png" class="img-fluid rounded" alt="...">
+                </div>
+
+                <div class="col p-0">
+                    <div class="card-body">
+                        <h1 class="card-title"
+                            style="font-size: 60px; margin-left: 225px; margin-bottom: 50px; margin-top: 0; padding: 0;">
+                            Quer aprender?</h1>
+                        <p style="font-size: 30px; padding: 0;">Explore nosso catálogo diversificado de cursos na Mente
+                            Digital,
+                            projetados para
+                            transformar seus
+                            interesses em conquistas tangíveis. </p>
+                        <p style="font-size: 30px; padding: 0;">
+                            Junte-se a nós enquanto transformamos o conhecimento em
+                            capacidade, capacitando você a alcançar seus objetivos e aspirações.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <!-- Fim texto principal -->
-    <!-- Inicio carrossel -->
 
+    <!-- Inicio carrossel -->
     <div class="container centraliza-grid">
         <div class="altera-carrossel centraliza-grid col-md-12">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel">
@@ -156,7 +167,7 @@
     <!-- Fim carrossel -->
 
     <!-- Inicio cartão -->
-    <div class="container">
+    <div class="container" >
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">
@@ -166,11 +177,13 @@
                         <p class="card-text">Explore a magia da música em nosso curso abrangente. Aprenda teoria
                             musical, pratique instrumentos e desenvolva habilidades auditivas enquanto mergulha no
                             fascinante mundo da melodia e harmonia.</p>
-                        <button type="button" class="btn btn-dark" href="#" role="button"><a>Mais
+                        <button type="button" class="btn btn-dark" onclick="window.location.href='curso_de_musica.html'"
+                            role="button"><a>Mais
                                 informações</a></button>
                     </div>
                 </div>
             </div>
+
             <div class="col">
                 <div class="card h-100">
                     <img src="imagens/cursos/Desenho.png" class="card-img-top" alt="...">
@@ -179,7 +192,8 @@
                         <p class="card-text">Liberte sua criatividade no curso de desenho, onde cada traço conta uma
                             história. Desde técnicas básicas até ilustração avançada, este curso oferece um ambiente
                             inspirador para aprimorar suas habilidades artísticas.</p>
-                        <button type="button" class="btn btn-dark" href="#" role="button"><a>Mais
+                        <button type="button" class="btn btn-dark" onclick="window.location.href='curso_desenho.html'"
+                            role="button"><a>Mais
                                 informações</a></button>
                     </div>
                 </div>
@@ -192,7 +206,8 @@
                         <p class="card-text">Transforme sua visão em obras de arte impressionantes. Com foco em
                             diferentes estilos e técnicas, este curso de pintura proporciona um espaço vibrante para
                             expressar sua imaginação por meio das cores e pincéis.</p>
-                        <button type="button" class="btn btn-dark" href="#" role="button"><a>Mais
+                        <button type="button" class="btn btn-dark" onclick="window.location.href='curso_pintura.html'"
+                            role="button"><a>Mais
                                 informações</a></button>
                     </div>
                 </div>
@@ -205,7 +220,8 @@
                         <p class="card-text">Descubra a arte da costura em nosso curso prático. Desde costura básica até
                             criação de peças personalizadas, você desenvolverá habilidades essenciais para dominar a
                             arte da moda e do design.</p>
-                        <button type="button" class="btn btn-dark" href="#" role="button"><a>Mais
+                        <button type="button" class="btn btn-dark" onclick="window.location.href='curso_costura.html'"
+                            role="button"><a>Mais
                                 informações</a></button>
                     </div>
                 </div>
@@ -214,9 +230,12 @@
                 <div class="card h-100">
                     <img src="imagens/cursos/Cozinhar.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Cursos de gastronomia</h5>
-                        <p class="card-text">Vive o Ratatuiiiii</p>
-                        <button type="button" class="btn btn-dark" href="#" role="button"><a>Mais
+                        <h5 class="card-title">Cursos de Gastronomia</h5>
+                        <p class="card-text">Satisfaça seu paladar no curso de gastronomia, explorando técnicas
+                            culinárias, combinação de sabores e apresentação de pratos. Torne-se um mestre na cozinha e
+                            impressione com suas habilidades culinárias.</p>
+                        <button type="button" class="btn btn-dark"
+                            onclick="window.location.href='curso_gastronomia.html'" role="button"><a>Mais
                                 informações</a></button>
                     </div>
                 </div>
@@ -229,7 +248,8 @@
                         <p class="card-text">Entre no mundo da beleza capilar. Este curso de cabeleireiro abrange
                             cortes, penteados, coloração e cuidados com o cabelo, proporcionando as habilidades
                             necessárias para criar looks deslumbrantes.</p>
-                        <button type="button" class="btn btn-dark" href="#" role="button"><a>Mais
+                        <button type="button" class="btn btn-dark"
+                            onclick="window.location.href='curso_cabeleleiro.html'" role="button"><a>Mais
                                 informações</a></button>
                     </div>
                 </div>
@@ -239,10 +259,13 @@
                     <img src="imagens/cursos/Maquiagem.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Cursos de Maquiagem</h5>
-                        <p class="card-text">Aprenda a arte da maquiagem, desde técnicas básicas até estilos avançados.
-                            Este curso oferece a chance de aprimorar suas habilidades de beleza, destacando o melhor de
+                        <p class="card-text">Aprenda a arte da maquiagem, desde técnicas básicas até estilos
+                            avançados.
+                            Este curso oferece a chance de aprimorar suas habilidades de beleza, destacando o
+                            melhor de
                             cada rosto com maquiagem profissional.</p>
-                        <button type="button" class="btn btn-dark" href="#" role="button"><a>Mais
+                        <button type="button" class="btn btn-dark" onclick="window.location.href='curso_maquiagem.html'"
+                            role="button"><a>Mais
                                 informações</a></button>
                     </div>
                 </div>
@@ -253,10 +276,13 @@
                         Latim, Árabe, Chinês e Hindi -->
                     <div class="card-body">
                         <h5 class="card-title">Cursos de Idioma</h5>
-                        <p class="card-text">Abra portas para o mundo com nosso curso de idioma. Aprenda de forma
-                            envolvente e eficaz, desenvolvendo habilidades linguísticas essenciais para comunicação e
+                        <p class="card-text">Abra portas para o mundo com nosso curso de idioma. Aprenda de
+                            forma
+                            envolvente e eficaz, desenvolvendo habilidades linguísticas essenciais para
+                            comunicação e
                             compreensão cultural.</p>
-                        <button type="button" class="btn btn-dark" href="#" role="button"><a>Mais
+                        <button type="button" class="btn btn-dark" onclick="window.location.href='curso_idiomas.html'"
+                            role="button"><a>Mais
                                 informações</a></button>
                     </div>
                 </div>
@@ -266,10 +292,13 @@
                     <img src="imagens/cursos/Atendente.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Cursos de atendente</h5>
-                        <p class="card-text">Domine as habilidades essenciais de atendimento ao cliente neste curso
-                            prático. Desde comunicação eficaz até resolução de problemas, prepare-se para se destacar no
+                        <p class="card-text">Domine as habilidades essenciais de atendimento ao cliente neste
+                            curso
+                            prático. Desde comunicação eficaz até resolução de problemas, prepare-se para se
+                            destacar no
                             serviço ao cliente em diversas áreas.</p>
-                        <button type="button" class="btn btn-dark" href="#" role="button"><a>Mais
+                        <button type="button" class="btn btn-dark" onclick="window.location.href='curso_atendente.html'"
+                            role="button"><a>Mais
                                 informações</a></button>
                     </div>
                 </div>

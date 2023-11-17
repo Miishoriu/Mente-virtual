@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição no Curso de atendente</title>
+    <link rel="shortcut icon" href="imagens/LOGO_mente_digital/Logo_preto.png" />
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #fcf9ff;">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap');
+    </style>
+    <!-- Inicio navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0" style="background-color:#191725;">
+        <!-- Define o espaço da nav -->
+        <div class="container-fluid container-estilo"> <!-- Conteúdo da nav -->
+            <a class="navbar-brand nav-titulo" href="index.html">
+                <img src="./imagens/LOGO_mente_digital/Logo_branco.png" alt="Logo" width="150" height="150"
+                    class="d-inline-block align-text-top">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Novidades</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cursos
+                        </a>
+                        <ul class="dropdown-menu altera-itens">
+                            <li><a class="dropdown-item" href="curso_gastronomia.html">Gastronomia</a></li>
+                            <li><a class="dropdown-item" href="curso_desenho.html">Desenhos</a></li>
+                            <li><a class="dropdown-item" href="curso_pintura.html">Pintura</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="index.html#carouselExampleAutoplaying">Todos</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input placeholder="O que você procura?" class="input-style" type="text">
+
+
+                </form>
+                <div class="m-2">
+                    <button class="botao" type="submit">Pesquisar</button>
+                </div>
+                <ul class="nav justify-content-end py-4">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="cadastro.html">Cadastre-se</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim navbar -->
+
+     <!-- Inicio texto principal -->
+     <div class="col">
+        <h1 class="card-title" style="font-size: 60px; text-align: center; ">
+            Curso de Música</h1>
+        <div class="card"
+            style="margin-left: 50px; margin-right: 20px; margin-top: 50px; margin-bottom: 200px; border: 0; background-color: #fcf9ff;">
+            <div class="row">
+                <div class="col">
+                    <img src="./imagens/cursos/Música.png" class="img-fluid rounded" alt="...">
+                </div>
+
+                <div class="col">
+                    <h1 class="card-title" style="font-size: 60px; text-align: center; ">
+                        Participe do Nosso Curso!</h1>
+                    <div class="card-body">
+                        <p class="Texto">Descrição:
+
+                            O curso de música é uma jornada envolvente e abrangente, projetada para estudantes apaixonados por
+                            expressão musical. Seja você um iniciante entusiasmado ou um músico experiente em busca de
+                            aprimoramento, este curso oferece uma oportunidade única de aprofundar seus conhecimentos e
+                            habilidades musicais.</p>
+        
+                            <p class="Texto"> Conteúdo do Curso:
+        
+                            Teoria Musical:
+        
+                            Fundamentos da leitura de partituras.
+                            Estruturação de acordes e escalas.
+                            Harmonia e análise musical.</p>
+                        
+                            <p class="Texto">Metodologia de Ensino:
+        
+                            O curso combina aulas teóricas, práticas e participação em projetos musicais. Os alunos são
+                            incentivados a aplicar o que aprendem em um ambiente prático, promovendo assim uma compreensão mais
+                            profunda e uma conexão pessoal com a música.</p>
+        
+                            <p class="Texto">Objetivos do Curso:
+        
+                            Desenvolver habilidades técnicas e interpretativas.
+                            Cultivar uma compreensão aprofundada da teoria musical.
+                            Encorajar a expressão criativa por meio da composição.
+                            Preparar os alunos para performances individuais e em grupo.
+                            Explorar as possibilidades da tecnologia na música.</p>
+
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col">
+                    <button class="botao-inscricao" id="botaoInscricao"
+                    onclick="exibirMensagem()">Inscreva-se Agora</button></div>
+                    <p id="mensagemInscricao" class="mt-3" style="display: none; color: green; font-weight: bold;"></p>
+        </div>
+    </div>
+    <!-- Fim texto principal -->
+
+    <script>
+        function exibirMensagem() {
+            document.getElementById("mensagemInscricao").style.display = "block";
+            document.getElementById("mensagemInscricao").innerHTML = "Inscrição no curso de Música concluída com sucesso!";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

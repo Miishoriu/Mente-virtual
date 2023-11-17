@@ -18,14 +18,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="cadastro.js"></script>
 </head>
 
 
-<body style="background-color: #EEF4ED;">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0"> <!-- Define o espaço da nav -->
+<body style="background-color: #191725;">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap');
+    </style>
+    <!-- Inicio navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0" style="background-color:#59518C;">
+        <!-- Define o espaço da nav -->
         <div class="container-fluid container-estilo"> <!-- Conteúdo da nav -->
             <a class="navbar-brand nav-titulo" href="index.html">
-                <img src="./imagens/LOGO_mente_digital/Logo_branco_escrito.png" alt="Logo" width="150" height="150"
+                <img src="./imagens/LOGO_mente_digital/Logo_branco.png" alt="Logo" width="150" height="150"
                     class="d-inline-block align-text-top">
 
             </a>
@@ -35,7 +43,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
@@ -47,24 +55,20 @@
                             aria-expanded="false">
                             Cursos
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Música</a></li>
-                            <li><a class="dropdown-item" href="#">Desenhos</a></li>
-                            <li><a class="dropdown-item" href="#">Pintura</a></li>
+                        <ul class="dropdown-menu altera-itens">
+                            <li><a class="dropdown-item" href="curso_gastronomia.html">Gastronomia</a></li>
+                            <li><a class="dropdown-item" href="curso_desenho.html">Desenhos</a></li>
+                            <li><a class="dropdown-item" href="curso_pintura.html">Pintura</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="index.html">Todos</a></li>
+                            <li><a class="dropdown-item" href="index.html#carouselExampleAutoplaying">Todos</a></li>
                         </ul>
                     </li>
 
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 form-pesquisa" type="search" placeholder="Que curso procura?"
-                        aria-label="Search" id="menu-pesquisa">
-                    <button class="botao" type="submit">Pesquisar</button>
-                </form>
-                <ul class="nav justify-content-end">
+
+                <ul class="nav justify-content-end py-4">
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="login.html">Login</a>
                     </li>
@@ -74,12 +78,13 @@
             </div>
         </div>
     </nav>
-
+    <!-- Fim navbar -->
+    <!-- Formulário -->
     <div class="container">
-        <div class="row g-3 ">
-            <div class="col-md-6">
+        <div class="row g-3">
+            <div class="col-md-6 mx-auto my-5">
                 <form class="formulario"
-                    style="margin-top: 60px; padding: 100px; border: 2px solid #457B9D; border-radius: 50px; background-color: #13315C; color: aliceblue;">
+                    style="margin-top: 180px ; padding: 30px; border: 2px solid #59518C; border-radius: 15px; background-color: #756CBF; color: aliceblue;">
                     <div class="mb-3">
                         <label for="loginUsuario" class="form-label">Usuário</label>
                         <input type="text" class="form-control" id="loginUsuario" placeholder="Digite seu usuário"

@@ -1,6 +1,3 @@
-html {
-    color: #FF7F51;
-}
 
 /* Estilo do nav */
 div a img{
@@ -12,7 +9,7 @@ div a img{
 
 
 .container-estilo{
-    background-color: #0B2545;
+    background-color: #59518C;
     height: 120px;
     font-family: 'Mukta', sans-serif;
 }
@@ -21,7 +18,7 @@ div a img{
 .altera-botao {
     /* Estilo do botão */
     border: 0;
-    background-color: #720026;
+    background-color: #59518C;
 }
 
 .container {
@@ -37,12 +34,12 @@ div a img{
 .Texto{
     
     margin-left: 100px;
-    margin-right: 100px;;
+   
 }
 
 .titulo {
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    color: #1D3557;
+    color: #191725;
     margin: 100px;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -53,7 +50,7 @@ div a img{
     margin-left:10px;
 }
 .nav-titulo:hover{
-    color: #A8DADC;
+    color: #fcf9ff;
     transition: 1s;
 }
 .nav-link{
@@ -62,22 +59,22 @@ div a img{
     color:#ffff !important;
 }
 .nav-link:hover{
-    color:#EED5FB !important;
+    color:#CAACF2 !important;
     transition: 1s;
 }
 .botao{
     height: 38px;
     margin-right: 155px;
-    color:black;
+    color:#756CBF;
     border-color: white;
     background-color: #ffff;
     border-radius: 10px;
 }
 .botao:hover{
-    color: black;
-    border-color: #A8DADC;
+    color: #ffffff  ;
+    border-color: #a39cdd;
     display: block;
-    background-color: #A8DADC;
+    background-color: #756CBF;
     transition: 1s ;
 }
 .input-style {
@@ -92,17 +89,36 @@ div a img{
   .input-style {
     height: 38px;
     border-radius: 10px;
-    border-color: #720026;
-    box-shadow: 0 0 0 0.2rem rgba(255, 153, 0, 0.25);
+    border-color: #59518C;
+    
   }
   .input-style:focus {
     height: 38px;
     border-radius: 10px;
-    border-color: #FF7F51;
-    box-shadow: 0 0 0 0.2rem rgba(255, 153, 0, 0.25);
+    border-color: #756CBF;
+   
   }
   
 .altera-itens li a:hover{
     cursor: pointer;
-    color: #CE4257;
+    color: #756CBF;
+}
+
+.botao-inscricao{
+    border-radius: 15px;
+    margin-left: 800px;
+    margin-top: 50px;
+}
+
+#mensagemInscricao{
+    text-align: center;
+}
+
+.botao-inscricao:hover{
+    
+    color: #ffffff;
+    border-color: #a39cdd !important;
+    display: block;
+    background-color: #CAACF2 !important;
+    transition: 1s ;
 }

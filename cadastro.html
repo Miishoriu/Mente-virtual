@@ -8,7 +8,7 @@
     <title>Cursos Mente Virtual</title>
     <link rel="shortcut icon" href="imagens/LOGO_mente_digital/Logo_preto.png" />
     <!-- script -->
-    <script type="text/javascript" src="java.js"></script>
+    <script type="text/javascript" src="cadastro.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="estilo.css">
     <!-- css bootstrap -->
@@ -20,11 +20,18 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0"> <!-- Define o espaço da nav -->
+<body style="background-color: #fcf9ff;">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap');
+    </style>
+    <!-- Inicio navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0" style="background-color:#191725;">
+        <!-- Define o espaço da nav -->
         <div class="container-fluid container-estilo"> <!-- Conteúdo da nav -->
             <a class="navbar-brand nav-titulo" href="index.html">
-                <img src="./imagens/LOGO_mente_digital/Logo_branco_escrito.png" alt="Logo" width="150" height="150"
+                <img src="./imagens/LOGO_mente_digital/Logo_branco.png" alt="Logo" width="150" height="150"
                     class="d-inline-block align-text-top">
 
             </a>
@@ -34,7 +41,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
@@ -47,25 +54,18 @@
                             Cursos
                         </a>
                         <ul class="dropdown-menu altera-itens">
-                            <li><a class="dropdown-item" href="#">Música</a></li>
-                            <li><a class="dropdown-item" href="#">Desenhos</a></li>
-                            <li><a class="dropdown-item" href="#">Pintura</a></li>
+                            <li><a class="dropdown-item" href="curso_gastronomia.html">Gastronomia</a></li>
+                            <li><a class="dropdown-item" href="curso_desenho.html">Desenhos</a></li>
+                            <li><a class="dropdown-item" href="curso_pintura.html">Pintura</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="index.html">Todos</a></li>
+                            <li><a class="dropdown-item" href="index.html#carouselExampleAutoplaying">Todos</a></li>
                         </ul>
                     </li>
 
                 </ul>
-                <form class="d-flex" role="search">
-                    <input placeholder="O que você procura?" class="input-style" type="text">
-
-
-                </form>
-                <div class="m-2">
-                    <button class="botao" type="submit">Pesquisar</button>
-                </div>
+                
                 <ul class="nav justify-content-end py-4">
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="login.html">Login</a>
@@ -76,9 +76,10 @@
             </div>
         </div>
     </nav>
-    <!-- Fim nav -->
+    <!-- Fim navbar -->
+
     <!-- Inicio cadastre-se -->
-    <div class="container">
+    <div class="container" style="margin-top: 50px;">
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-4">
                 <label for="validationCustom01" class="form-label" id="labelNome">Primeiro nome</label>
@@ -115,7 +116,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label" id="labelSenha">Senha</label>
-                            <input type="senha" class="form-control is-invalid" id="floatingInputInvalid"
+                            <input type="password" class="form-control is-invalid" id="floatingInputInvalid"
                                 placeholder="Digite sua senha">
                             <div id="senhaHelp" class="form-text">Todos os campos são obrigatórios.</div>
                         </div>
@@ -137,7 +138,7 @@
                                 <option>Tchola</option>
                                 <option>Não binário</option>
                                 <option>Negão ingual o Weslley</option>
-                                <option>Outros</option>
+                                <option>Outro</option>
                             </select>
 
                         </div>

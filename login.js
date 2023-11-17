@@ -11,7 +11,7 @@ function realizarLogin() {
         var loginInfo = JSON.parse(loginInfoSalvo);
 
         // verifica se as informações estão corretas
-        var usuarioEncontrado = usuarios.find(u => u.usuario === usuarioLogin && u.senha === senhaLogin);
+        var usuarioEncontrado = usuarios.find(u => u.usuarios === usuarioLogin && u.senha === senhaLogin);
 
         if (usuarioEncontrado) {
             alert('Parabuéins Login bem-sucedido!');
